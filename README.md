@@ -9,11 +9,11 @@ Currently, two official plugins are available:
 
 <h1> want to access the site use : </h1>
 <h2>Employees login details:</h2>
-<h3>email: e@e.com </h3><br/>
-<h3>password: 123 </h3><br/>
+<h3>email: e@e.com </h3>
+<h3>password: 123 </h3>
 
 <br/><br/>
 
-<h2>Employees login details:</h2>
-<h3>email: e@e.com </h3><br/>
-<h3>password: 123 </h3><br/>
+<h2>Admin login details:</h2>
+<h3>email: admin@example.com </h3>
+<h3>password: 123 </h3>
