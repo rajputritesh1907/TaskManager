@@ -11,16 +11,16 @@ const Header = (props) => {
   //   setUsername(data.firstName)
   // }
 
-  const logOutUser = ()=>{
-    localStorage.setItem('loggedInUser','')
+  const logOutUser = () => {
+    localStorage.setItem('loggedInUser', '')
     props.changeUser('')
   }
 
-  
+
   return (
-    <div className='flex items-end justify-between'>
-        <h1 className='text-2xl font-medium'>Hello <br /> <span className='text-3xl font-semibold'>username 👋</span></h1>
-        <button onClick={logOutUser} className='bg-red-600 text-base font-medium text-white px-5 py-2 rounded-sm'>Log Out</button>
+    <div className='flex items-end justify-between mb-10'>
+      <h1 className='text-2xl font-medium text-zinc-400'>Hello <br /> <span className='text-3xl font-bold text-white'>username 👋</span></h1>
+      <button onClick={logOutUser} className='bg-rose-600 hover:bg-rose-700 text-white text-base font-medium px-6 py-2 rounded-lg shadow-lg shadow-rose-500/20 transition-all duration-200'>Log Out</button>
     </div>
   )
 }
