@@ -1,22 +1,22 @@
 
 import React from 'react'
 
-const CompleteTask = ({data}) => {
-  return (
-    <div className='flex-shrink-0 h-full w-[300px] p-5 bg-blue-400 rounded-xl'>
-            <div className='flex justify-between items-center'>
-                <h3 className='bg-red-600 text-sm px-3 py-1 rounded'>{data.category}</h3>
-                <h4 className='text-sm'>{data.taskDate}</h4>
+const CompleteTask = ({ data }) => {
+    return (
+        <div className='flex-shrink-0 h-auto md:h-full w-full md:w-[300px] p-5 bg-zinc-900 rounded-xl border border-zinc-800 shadow-lg hover:border-emerald-500 transition-colors duration-300'>
+            <div className='flex justify-between items-center mb-4'>
+                <h3 className='bg-emerald-600/20 text-emerald-400 text-xs font-medium px-3 py-1 rounded-full border border-emerald-600/30'>{data.category}</h3>
+                <h4 className='text-xs text-zinc-400 font-medium'>{data.taskDate}</h4>
             </div>
-            <h2 className='mt-5 text-2xl font-semibold'>{data.taskTitle}</h2>
-            <p className='text-sm mt-2'>
+            <h2 className='text-2xl font-bold text-white mb-2'>{data.taskTitle}</h2>
+            <p className='text-sm text-zinc-400 leading-relaxed h-[55%] overflow-y-auto task-scroll'>
                 {data.taskDescription}
             </p>
-            <div className='mt-6'>
-                <button className='w-full bg-green-600 rounded font-medium py-1 px-2 text-xs'>Complete</button>
+            <div className='mt-auto pt-4 border-t border-zinc-800'>
+                <button className='w-full bg-emerald-600/20 text-emerald-400 font-semibold py-2 px-4 rounded-lg text-sm cursor-default border border-emerald-600/30'>Completed</button>
             </div>
         </div>
-  )
+    )
 }
 
 export default CompleteTask
